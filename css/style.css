@@ -651,7 +651,7 @@ ul {
 }
 .descr-text {
   position: absolute;
-  margin: 0;
+  margin: 0px;
   padding: 63px 24px;
 }
 .card .card-thumb:hover {
