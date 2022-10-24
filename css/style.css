@@ -649,7 +649,7 @@ ul {
 .card-item:hover .descr-overlay {
   transform: translateY(0);
 }
-/* Позиціонування оверлею */
+/* Позиціонування оверлею?в лайв сервері норм,на сторінці косяк */
 .descr-text {
   position: absolute;
   margin: 0px;
