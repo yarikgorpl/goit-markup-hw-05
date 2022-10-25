@@ -19,7 +19,9 @@ hnml {
 *::after {
   box-sizing: inherit;
 }
-
+img {
+  display: block;
+}
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -471,7 +473,7 @@ ul {
   background-color: var(--hero-footer-text-color);
   border-radius: 50%;
 
-  transition-property: color, fill;
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -625,7 +627,6 @@ ul {
   margin-left: var(--card-set-gap);
 }
 .descr {
-  display: inline-block;
   position: relative;
   overflow: hidden;
 }
@@ -646,7 +647,8 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-item:hover .descr-overlay {
+.card-link:hover .descr-overlay,
+.card-link:focus .descr-overlay {
   transform: translateY(0);
 }
 /* Позиціонування оверлею?в лайв сервері норм,на сторінці косяк */
@@ -732,4 +734,5 @@ ul {
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
